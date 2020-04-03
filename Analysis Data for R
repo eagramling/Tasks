@@ -1,0 +1,30 @@
+#set and upload data for Bird axial lengths
+library(readr)
+DATA_Bird_Axial_Length <- read_csv("Data For Analysis/DATA_Bird_Axial_Length.csv")
+View(DATA_Bird_Axial_Length)
+#This particular plot will have to show species and average axial length for comparison
+
+library(readr)
+DATA_Dog_Axial_Length <- read_csv("Data For Analysis/DATA_Dog_Axial_Length.csv")
+View(DATA_Dog_Axial_Length)
+counts <- table(DATA_Dog_Axial_Length)
+barplot(counts, main="German Shepard Axial Length in mm")
+#Happy I got this to show
+#This plot was much simpler due to the one breed of dog and 73 measurements
+
+
+library(readr)
+DATA_Fish_Axial_Length <- read_csv("Data For Analysis/DATA_Fish_Axial_Length.csv")
+View(DATA_Fish_Axial_Length)
+> counts <- table(DATA_Fish_Axial_Length)
+> barplot(counts, main="Zebra Fish Axial Length in mm")
+#Basically same as the Dog Axial Length graph, limited to one species with multiple measurements
+
+library(readr)
+DATA_Lizard_Axial_Length <- read_csv("Data For Analysis/DATA_Lizard_Axial_Length.csv")
+View(DATA_Lizard_Axial_Length)
+library(ggplot2)
+ data <- data.frame (name=c("Chameleonidae", "Cordylidae", "Eubepharidae", "Geckonidae", "Gerrhosauridae", "Helpdermatidae", "Iguanidae", "Lacertidae", "Scinidae", "Telldae", "Xantuslldae", "Rychocephalia"), value=c(6.37, 4.22, 5.63, 4.29, 6.01, 8.23, 6.76, 3.63, 5.04, 10.51, 3.07, 14.96))
+ ggplot(data, aes(x=name, y=value)) + geom_line() + coord_flip()
+#This is a struggle
+#Ive attempted so many times to get this to work but Ive had little success
