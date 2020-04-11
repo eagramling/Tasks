@@ -1,0 +1,34 @@
+attach (Lizard.Axial.Length)
+head (Lizard.Axial.Length)
+stripchart(Lizard.Axial.Length)
+stripchart(Lizard.Axial.Length, main="Various Lizard Axial Lengths", 
+	col = "red", pch = 17, xlab = "Length in mm", 
+	ylab = "Species of Lizard", method = "jitter")
+	
+	
+	
+ stripchart(DATA_Dog_Axial_Length)
+ stripchart(DATA_Dog_Axial_Length, main = "German Shepard Axial Length", 
+	xlab = "Axial Length in mm", 
+	ylab = "German Shepard Subjects", 
+	col = "violet", method = "jitter", pch= 19)
+	
+	
+	
+stripchart(DATA_Bird_Axial_Length)
+stripchart(DATA_Bird_Axial_Length, 
+	main= "Various Bird Axial Lengths Based on Species", 
+	Vertical = TRUE, pch = 20, col = "navy")	
+stripchart(DATA_Bird_Axial_Length, 
+	main= "Various Bird Axial Lengths Based on Species", 
+	pch = 20, col = "navy", method = "jitter", 
+	xlab= "Axial Length in mm", ylab = "Species of Bird", 
+	add = TRUE, 
+	group.names = "Strigiformes", "Podagidae", "Aegothelidae", 
+					"Nyctibdae", "Caprimulgidae", "Fakconiformes", 
+					"Accipidrae", "Apodiformes", "Psittaciformes", 
+					"Columbiformes", "Struthioniformes"
+					
+
+
+plot (DATA_Fish_Axial_Length, main= "Zebra Fish Axial Length", xlab= "Recorded Length in mm", pch = 16, col="blue")
