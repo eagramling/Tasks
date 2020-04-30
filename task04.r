@@ -96,4 +96,11 @@ abline(Line)
 Line2 <- lm( tExt ~ Samples + 0)
 
 
+#extra credit portion
+install.packages("sandwich")
+library(sandwich)
+reg_exl <- lm(lwage~exper + log(huswage), data = Samples)
 
+lm(lwage~exper + log(huswage), data = Samples)
+vcv <- vcovHAC(reg_exl)
+vcv <-vcovHAC (reg_exl)
